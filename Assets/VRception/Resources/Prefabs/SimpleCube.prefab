@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3676621811107372931}
   - component: {fileID: 2038922346659512825}
   - component: {fileID: 961648356422759525}
+  - component: {fileID: 3521588315609215616}
   m_Layer: 8
   m_Name: Model
   m_TagString: Untagged
@@ -143,6 +144,19 @@ MonoBehaviour:
   m_SynchronizeRotation: 0
   m_SynchronizeScale: 1
   m_UseLocal: 1
+--- !u!114 &3521588315609215616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262422384118992375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebaa4c1b99e4d014284526b3098e8261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentCollisions: []
 --- !u!1 &7180444144184662689
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,6 +337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb0f0100db073904ca616bb5875acb66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 1
 --- !u!114 &5218747759735855271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,6 +350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a94bddbb1ed9434dbb75a1e63eeb7c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 1
 --- !u!114 &2037402086676880192
 MonoBehaviour:
   m_ObjectHideFlags: 0
