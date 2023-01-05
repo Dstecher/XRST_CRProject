@@ -19,8 +19,18 @@ namespace VRception
         {
             if (checkForQuestCompletion())
             {
-                Debug.Log("[DEBUG] Quest complete!!");
+                Debug.Log("[DEBUG] First Quest complete!!");
                 EventManager.firstRiddleComplete = true;
+                if (gameObject.layer == 10)
+                {
+                    gameObject.SetActive(false);
+                }
+            }
+
+            if (secondQuestComplete())
+            {
+                Debug.Log("[DEBUG] Second Quest complete!!");
+                EventManager.secondRiddleComplete = true;
             }
         }
 
@@ -54,6 +64,23 @@ namespace VRception
                         }
                     }
                     if (magentaExists && pinkExists)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        bool secondQuestComplete()
+        {
+            CollisionDetector collisionDetector = GetComponent<CollisionDetector>();
+            currentCollisions = collisionDetector.GetCurrentCollisions();
+            if (currentCollisions.Length > 0)
+            {
+                foreach (GameObject collisionObject in currentCollisions)
+                {
+                    if (collisionObject.name.Contains("RiddleTwoGoal"))
                     {
                         return true;
                     }

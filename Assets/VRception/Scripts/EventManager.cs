@@ -9,5 +9,9 @@ namespace VRception
     {
         public static bool firstRiddleComplete = false;
 
+        public static bool secondRiddleStart = false;
+
+        public static bool secondRiddleComplete = false;
+
     }
 }
