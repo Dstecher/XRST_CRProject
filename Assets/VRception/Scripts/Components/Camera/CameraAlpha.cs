@@ -46,7 +46,10 @@ namespace VRception
             // Get all game objects from specified space
             GameObject[] objects = ControllerSpaces.instance.GetRootGameObjects(space);
             foreach(GameObject obj in objects)
+            {
                 CameraAlpha.SetAlphaToGameObjectAndChildren(obj, value);
+            }
+                
         }
 
         // Method allows to recursively set the alpha value to the gameobject, childs, and deep childs.
@@ -57,7 +60,10 @@ namespace VRception
 
             // Set alpha to children of this game object
             foreach (Transform child in obj.transform)
+            {
                 CameraAlpha.SetAlphaToGameObjectAndChildren(child.gameObject, value);
+            }
+                
         }
 
         // Method that applies the alpha value to one specific gameobject
