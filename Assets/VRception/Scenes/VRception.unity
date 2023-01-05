@@ -222,7 +222,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &592967033
 Transform:
   m_ObjectHideFlags: 0
@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoConnect: 1
-  roomName: VRception-Github
+  roomName: Prototyping_CR_Systems
   version: 1
   maxPlayers: 4
   playerTTL: -1
@@ -431,7 +431,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1141052878
 Transform:
   m_ObjectHideFlags: 0
@@ -512,79 +512,6 @@ MonoBehaviour:
   activatedExperiences: 27
   durationOfFlight: 0.5
   markerDefaultPrefab: {fileID: 8902031627805880602, guid: 499a019f9148e4d4a98ea99c3a59cecf, type: 3}
---- !u!1 &1253462463
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1253462464}
-  - component: {fileID: 1253462465}
-  - component: {fileID: 1253462466}
-  m_Layer: 0
-  m_Name: Logging and Replay Settings
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1253462464
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1253462463}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1253462465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1253462463}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ff3785dd62977c4faa9fbea684cf30f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: 1
-  mongoDatabaseURL: mongodb+srv://URL
-  databaseName: VRception
-  participantID: not_set
-  writeToDatabaseLimit: 200
-  logEveryXFrames: 5
-  currentlyLoggedGameobjects: []
---- !u!114 &1253462466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1253462463}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94fb83b40a70ce94a9085d05610eeca8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  useDatabaseFromLogger: 1
-  mongoDatabaseURL: mongodb+srv://URL
-  databaseName: VRception
-  sessionToReplay: 
-  dataAvailable: 0
-  play: 0
-  objectsForReplay: []
-  eventsForReplay: []
-  objectsInititated: []
-  sessions: []
 --- !u!1 &1586039377
 GameObject:
   m_ObjectHideFlags: 0
