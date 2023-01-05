@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentCollisions: []
+  startSecondRiddleButton: {fileID: 0}
 --- !u!1 &7180444144184662689
 GameObject:
   m_ObjectHideFlags: 0

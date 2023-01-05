@@ -7,6 +7,7 @@ namespace VRception
     public class OrangeCube : MonoBehaviour
     {
         public GameObject[] currentCollisions = null;
+        public GameObject startSecondRiddleButton;
 
         // Start is called before the first frame update
         void Start()
@@ -21,10 +22,6 @@ namespace VRception
             {
                 Debug.Log("[DEBUG] First Quest complete!!");
                 EventManager.firstRiddleComplete = true;
-                if (gameObject.layer == 10)
-                {
-                    gameObject.SetActive(false);
-                }
             }
 
             if (secondQuestComplete())
@@ -32,6 +29,15 @@ namespace VRception
                 Debug.Log("[DEBUG] Second Quest complete!!");
                 EventManager.secondRiddleComplete = true;
             }
+
+            if (gameObject.layer == 10 && EventManager.firstRiddleComplete)
+                {
+                    gameObject.SetActive(false);
+                    if (startSecondRiddleButton != null)
+                    {
+                        startSecondRiddleButton.SetActive(true);
+                    }
+                }
         }
 
         bool checkForQuestCompletion()
