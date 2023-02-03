@@ -1,3 +1,6 @@
+# Disclaimer
+**This repository is based on the work of Gruenefeld et al. (see [VRception](https://github.com/UweGruenefeld/VRception)). For this reason, the following README file is also a copy of the original file.**
+
 # VRception Toolkit
 **Rapid Prototyping of Cross-Reality Systems in Virtual Reality**
 
